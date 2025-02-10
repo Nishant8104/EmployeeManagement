@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Add Employee</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Add Employee</h1>
+        
+        <form id="employeeForm">
+            <div class="form-group">
+                <label>Name:</label>
+                <input type="text" id="name" required>
+            </div>
+            
+            <div class="form-group">
+                <label>Department No:</label>
+                <input type="number" id="department" required>
+            </div>
+            
+            <div class="form-group">
+                <label>Email:</label>
+                <input type="email" id="email" required>
+            </div>
+            
+            <div class="form-group">
+                <label>Position:</label>
+                <input type="text" id="position" required>
+            </div>
+            
+            <button type="submit">Add Employee</button>
+        </form>
+
+        <h2>Employees List</h2>
+        <table id="employeesTable">
+            <thead>
+                <tr>
+                    <th>Name</th>
+                    <th>Department</th>
+                    <th>Email</th>
+                    <th>Position</th>
+                </tr>
+            </thead>
+            <tbody id="employeesListBody"></tbody>
+        </table>
+    </div>
+
+    <script src="js/form.js"></script>
+</body>
+</html>
